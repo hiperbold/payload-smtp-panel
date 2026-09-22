@@ -1,6 +1,7 @@
 {
   "name": "@hiperbold/payload-smtp-panel",
   "version": "0.1.0",
+  "packageManager": "pnpm@11.5.1",
   "description": "Payload 3 plugin: SMTP/email settings editable in the admin panel, with an encrypted secret and pluggable transports (SMTP, SendKit, Resend).",
   "license": "MIT",
   "author": "Hiperbold",
