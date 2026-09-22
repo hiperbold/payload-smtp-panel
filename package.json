@@ -1,0 +1,65 @@
+{
+  "name": "@hiperbold/payload-smtp-panel",
+  "version": "0.1.0",
+  "description": "Payload 3 plugin: SMTP/email settings editable in the admin panel, with an encrypted secret and pluggable transports (SMTP, SendKit, Resend).",
+  "license": "MIT",
+  "author": "Hiperbold",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "nodemailer": "^10.0.0"
+  },
+  "peerDependencies": {
+    "payload": "^3.0.0",
+    "react": "^18 || ^19"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/nodemailer": "^8.0.2",
+    "@types/react": "^19.3.0",
+    "graphql": "^17.0.2",
+    "payload": "^3.90.1",
+    "react": "^19.3.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.1"
+  },
+  "keywords": [
+    "payload",
+    "payloadcms",
+    "plugin",
+    "smtp",
+    "email"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiperbold/payload-smtp-panel"
+  }
+}
